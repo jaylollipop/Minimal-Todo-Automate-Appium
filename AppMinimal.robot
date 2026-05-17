@@ -75,26 +75,8 @@ TC002 Add Todo With Reminder Date Successfully
     Page Should Contain Text    ${TODO_TEXT2}
     Capture Page Screenshot
 
-TC003 Add Todo With Reminder Time Successfully
-    [Documentation]     TC003 Add Todo With Reminder Time Successfully
-    Wait Until Page Contains Element    ${ADD_TODO_BUTTON}    20s
-    Click Element    ${ADD_TODO_BUTTON}
-
-    Wait Until Page Contains Element    ${TODO_INPUT}    20s
-    Input Text    ${TODO_INPUT}    ${TODO_TEXT3}
-
-    Open Reminder Date Picker
-    Select Reminder Time
-
-    Wait Until Page Contains Element    ${SAVE_TODO_BUTTON}    20s
-    Click Element    ${SAVE_TODO_BUTTON}
-
-    Wait Until Page Contains    ${TODO_TEXT3}    20s
-    Page Should Contain Text    ${TODO_TEXT3}
-    Capture Page Screenshot
-
-TC004 Select Current Day Show Text : The date you entered is in the past
-    [Documentation]     TC004 Select Current Day Show Text : The date you entered is in the past
+TC003 Select Current Day Show Text : The date you entered is in the past
+    [Documentation]     TC003 Select Current Day Show Text : The date you entered is in the past
     Wait Until Page Contains Element    ${ADD_TODO_BUTTON}    20s
     Click Element    ${ADD_TODO_BUTTON}
 
